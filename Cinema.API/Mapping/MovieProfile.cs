@@ -9,6 +9,8 @@ namespace Cinema.API.Mapping
         public MovieProfile()
         {
             CreateMap<MovieDto, Movie>().ReverseMap();
+            CreateMap<RegisterDto, User>().ReverseMap();
+            CreateMap<User, LoggedInUserDto>();
         }
     }
 }

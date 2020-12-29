@@ -22,6 +22,9 @@ namespace Cinema.API.Models
 
         public virtual User User { get; set; }
 
-        public virtual ICollection<Movie> Movies { get; set; }
+        [ForeignKey("Movie")]
+        public int MovieId { get; set; }
+
+        public virtual Movie Movie { get; set; }
     }
 }

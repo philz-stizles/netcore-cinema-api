@@ -4,10 +4,11 @@
 
 # File upload using wwwroot
 
-# One to Many
+# One to One
 
-# Many to Many
+# One to Many
 
 # Automapping
 
+# Using AspNetCore.Authentication.Plugin - to secure web API & Hash password
 

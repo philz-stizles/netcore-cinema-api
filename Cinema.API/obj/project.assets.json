@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "AspNetCore.Authentication.Plugin/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.1.1",
+          "Microsoft.IdentityModel.Tokens": "5.5.0",
+          "System.IdentityModel.Tokens.Jwt": "5.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.2/AuthenticationPlugin.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.2/AuthenticationPlugin.dll": {}
+        }
+      },
       "AutoMapper/10.1.0": {
         "type": "package",
         "dependencies": {
@@ -1511,6 +1525,19 @@
     }
   },
   "libraries": {
+    "AspNetCore.Authentication.Plugin/1.0.1": {
+      "sha512": "cSPfOwOz1hhIg+hvi3egoLc2BHUjLi411NuVWK+8P7L2ieDUMjXjx0MwBzO6WLGxC/1ixqZ+2fagPRsUrpCLzQ==",
+      "type": "package",
+      "path": "aspnetcore.authentication.plugin/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspnetcore.authentication.plugin.1.0.1.nupkg.sha512",
+        "aspnetcore.authentication.plugin.nuspec",
+        "lib/netcoreapp2.2/AuthenticationPlugin.dll",
+        "lib/netcoreapp2.2/AuthenticationPlugin.xml"
+      ]
+    },
     "AutoMapper/10.1.0": {
       "sha512": "qxn9+PpQJD53PAUHGXW3HTcq6Rxbv3Pyq/jTcc60ZYwOygyqUfHIY3HBChKbDwtTHdlwlQqJeJ1ckVcaoytxxw==",
       "type": "package",
@@ -5606,6 +5633,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "AspNetCore.Authentication.Plugin >= 1.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 5.0.0",
       "Microsoft.AspNetCore.Authentication.OpenIdConnect >= 5.0.0",
@@ -5620,11 +5648,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\Projects\\Personal\\CSharp\\netcore-cinema-api\\Cinema.API\\Cinema.API.csproj",
+      "projectUniqueName": "c:\\Users\\theop\\OneDrive\\Documents\\ICT\\Projects\\Personal\\CSharp\\netcore-cinema-api\\Cinema.API\\Cinema.API.csproj",
       "projectName": "Cinema.API",
-      "projectPath": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\Projects\\Personal\\CSharp\\netcore-cinema-api\\Cinema.API\\Cinema.API.csproj",
+      "projectPath": "c:\\Users\\theop\\OneDrive\\Documents\\ICT\\Projects\\Personal\\CSharp\\netcore-cinema-api\\Cinema.API\\Cinema.API.csproj",
       "packagesPath": "C:\\Users\\theop\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\Projects\\Personal\\CSharp\\netcore-cinema-api\\Cinema.API\\obj\\",
+      "outputPath": "c:\\Users\\theop\\OneDrive\\Documents\\ICT\\Projects\\Personal\\CSharp\\netcore-cinema-api\\Cinema.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\theop\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5653,6 +5681,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "AspNetCore.Authentication.Plugin": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[8.1.0, )"

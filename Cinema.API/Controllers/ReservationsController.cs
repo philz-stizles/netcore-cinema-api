@@ -26,8 +26,8 @@ namespace Cinema.API.Controllers
             _context = context;
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Post([FromForm]ReservationDto dto)
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Create([FromBody]ReservationDto dto)
         {
             await _context.Reservations.AddAsync(_mapper.Map<Reservation>(dto));
             await _context.SaveChangesAsync();
@@ -35,8 +35,8 @@ namespace Cinema.API.Controllers
             return Ok(new { Status = true, Message = "Created successfully"});
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromForm]ReservationDto dto)
+        [HttpPut("[action]/{id}")]
+        public async Task<IActionResult> Update(int id, [FromBody]ReservationDto dto)
         {
             try
             {
@@ -53,8 +53,8 @@ namespace Cinema.API.Controllers
             }
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        [HttpGet("[action]/{id}")]
+        public async Task<IActionResult> Detail(int id)
         {
             var reservation = await _context.Reservations.FindAsync(id);
             if(reservation == null) throw new Exception("Reservation does not exist");

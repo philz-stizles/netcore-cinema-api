@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7CogLJTGi2DbhWKAqbhVA3lokAC8Onb7fJoQrNzoo7C8D8yBDLZ5B0YeOcrZ3hOYLnKjm9gVHUGgOp6ENtBbpQ==",
+  "dgSpecHash": "ckG8QOgGkLKV5ihB7bafG2egyWNg3gvCq7DSsC9Ec3TPaITorC51H38GxSv40RtsqHh/Pxg7Mi9ewxHEBbv0Zg==",
   "success": true,
   "projectFilePath": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\Projects\\Personal\\CSharp\\netcore-cinema-api\\Cinema.API\\Cinema.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\theop\\.nuget\\packages\\aspnetcore.authentication.plugin\\1.0.1\\aspnetcore.authentication.plugin.1.0.1.nupkg.sha512",
     "C:\\Users\\theop\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\theop\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "C:\\Users\\theop\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
